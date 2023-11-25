@@ -17,18 +17,17 @@
                         <div class="grid grid-flow-col gap-1.5">
                             <div class="grid gap-3 text-[#131316]">
                                 <p class="font-semibold">Date Range</p>
-                                <div class="p-4 py-3.5 rounded-xl border border-[#EFF1F6] bg-[#EFF1F6] flex justify-between items-center">
+                                <button class="p-4 py-3.5 w-full rounded-xl border border-[#EFF1F6] bg-[#EFF1F6] flex justify-between items-center">
                                     <p class="text-sm font-medium">17 Jul 2023</p>
                                     <img src="/images/expand-more.svg" alt="Expand More Icon">
-                                </div>
+                                </button>
                             </div>
                             <div class="grid gap-3 text-[#131316]">
                                 <p class="font-semibold invisible">Date Range</p>
-                                <div class="p-4 py-3.5 rounded-xl border border-[#EFF1F6] bg-[#EFF1F6] flex justify-between items-center">
-                                    <select name="" id=""></select>
+                                <button class="p-4 py-3.5 w-full rounded-xl border border-[#EFF1F6] bg-[#EFF1F6] flex justify-between items-center">
                                     <p class="text-sm font-medium">17 Jul 2023</p>
                                     <img src="/images/expand-more.svg" alt="Expand More Icon">
-                                </div>
+                                </button>
                             </div>
                         </div>
                         <div class="grid grid-flow-col gap-1.5">
