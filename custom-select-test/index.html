@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Custom Select Menu With CSS and JS</title>
+</head>
+<body>
+    <div class="custom-select">
+        <button
+          class="select-button"
+          role="combobox"
+          aria-labelledby="select button"
+          aria-haspopup="listbox"
+          aria-expanded="false"
+          aria-controls="select-dropdown"
+        >
+          <span class="selected-value">Open this select menu</span>
+          <span class="arrow"></span>
+        </button>
+        <ul class="select-dropdown" role="listbox" id="select-dropdown">
+          <li role="option">
+            <input type="radio" id="github" name="social-account" />
+            <label for="github"><i class="bx bxl-github"></i>GitHub</label>
+          </li>
+          <li role="option">
+            <input type="radio" id="instagram" name="social-account" />
+            <label for="instagram"
+              ><i class="bx bxl-instagram"></i>Instagram</label
+            >
+          </li>
+          <li role="option">
+            <input type="radio" id="facebook" name="social-account" />
+            <label for="facebook"
+              ><i class="bx bxl-facebook-circle"></i>Facebook</label
+            >
+          </li>
+          <li role="option">
+            <input type="radio" id="linkedIn" name="social-account" />
+            <label for="linkedIn"
+              ><i class="bx bxl-linkedin-square"></i>LinkedIn</label
+            >
+          </li>
+          <li role="option">
+            <input type="radio" id="twitter" name="social-account" />
+            <label for="twitter"><i class="bx bxl-twitter"></i>Twitter</label>
+          </li>
+          <li role="option">
+            <input type="radio" id="reddit" name="social-account" />
+            <label for="reddit"><i class="bx bxl-reddit"></i>Reddit</label>
+          </li>
+        </ul>
+      </div>
+
+    <!-- <div class="custom-select">
+        <button
+        class="select-button"
+        role="combobox"
+        aria-labelledby="select button"
+        aria-haspopup="listbox"
+        aria-expanded="false"
+        aria-controls="select-dropdown"
+        >
+        <span class="selected-value">Open this select menu</span>
+        <span class="arrow"></span>
+        </button>
+        <ul class="select-dropdown" role="listbox" id="select-dropdown">
+        <li role="option">
+            <input type="radio" id="github" name="social-account" />
+            <label for="github"><i class="bx bxl-github"></i>GitHub</label>
+        </li>
+        <li role="option">
+            <input type="radio" id="instagram" name="social-account" />
+            <label for="instagram"
+            ><i class="bx bxl-instagram"></i>Instagram</label
+            >
+        </li>
+        <li role="option">
+            <input type="radio" id="facebook" name="social-account" />
+            <label for="facebook"
+            ><i class="bx bxl-facebook-circle"></i>Facebook</label
+            >
+        </li>
+        <li role="option">
+            <input type="radio" id="linkedIn" name="social-account" />
+            <label for="linkedIn"
+            ><i class="bx bxl-linkedin-square"></i>LinkedIn</label
+            >
+        </li>
+        <li role="option">
+            <input type="radio" id="twitter" name="social-account" />
+            <label for="twitter"><i class="bx bxl-twitter"></i>Twitter</label>
+        </li>
+        <li role="option">
+            <input type="radio" id="reddit" name="social-account" />
+            <label for="reddit"><i class="bx bxl-reddit"></i>Reddit</label>
+        </li>
+        </ul>
+    </div> -->
+
+    <div class="custom-select-two">
+        <button 
+            class="select-button-two" 
+            role="combobox"
+            aria-labelledby="select button two"
+            aria-haspopup="listbox"
+            aria-expanded="false"
+            aria-controls="select-dropdown-two"
+        >
+            <span class="selected-value-two">Open this select menu</span>
+            <span class="arrow-two"></span>
+        </button>
+        <ul class="select-dropdown-two" role="listbox" id="select-dropdown-two">
+            <li role="option">
+                <input type="checkbox" name="social-account-two" id="github-two">
+                <label for="github-two"><i class="bx bxl-github"></i>GitHub</label>
+            </li>
+            <li role="option">
+                <input type="checkbox" name="social-account-two" id="instagram-two">
+                <label for="instagram-two"><i class="bx bxl-instagram"></i>Instagram</label>
+            </li>
+            <li role="option">
+                <input type="checkbox" name="social-account-two" id="facebook-two">
+                <label for="facebook-two"><i class="bx bxl-facebook"></i>Facebook</label>
+            </li>
+            <li role="option">
+                <input type="checkbox" name="social-account-two" id="linkedIn-two">
+                <label for="linkedIn-two"><i class="bx bxl-linkedin-square"></i>LinkedIn</label>
+            </li>
+            <li role="option">
+                <input type="checkbox" name="social-account-two" id="twitter-two">
+                <label for="twitter-two"><i class="bx bxl-twitter"></i>Twitter</label>
+            </li>
+            <li role="option">
+                <input type="checkbox" name="social-account-two" id="reddit-two">
+                <label for="reddit-two"><i class="bx bxl-reddit"></i>Reddit</label>
+            </li>
+        </ul>
+    </div>
+
+    <div class="wrapper">
+        <header>
+          <p class="current-date"></p>
+          <div class="icons">
+            <span id="prev" class="material-symbols-rounded">chevron_left</span>
+            <span id="next" class="material-symbols-rounded">chevron_right</span>
+          </div>
+        </header>
+        <div class="calendar">
+          <ul class="weeks">
+            <li>Sun</li>
+            <li>Mon</li>
+            <li>Tue</li>
+            <li>Wed</li>
+            <li>Thu</li>
+            <li>Fri</li>
+            <li>Sat</li>
+          </ul>
+          <ul class="days"></ul>
+        </div>
+      </div>
+      
+      <link  href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"
+      />
+      <script src="app.js"></script>
+</body>
+</html>
